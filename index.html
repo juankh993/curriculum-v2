@@ -9,81 +9,85 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo"></div>
+            <div class="logo">
+                CV
+            </div>
             <nav>
                 <ul>
-                    <a href="#"><li>Sobre mí</li></a>
-                    <a href="#"><li>Formación</li></a>
-                    <a href="#"><li>Experiencia</li></a>
-                    <a href="#"><li>Contacto</li></a>
+                    <li><a href="#about-me">Sobre mí</a></li>
+                    <li><a href="#formation-me">Formación</a></li>
+                    <li><a href="#experience-me">Experiencia</a></li>
+                    <li><a href="#contact-me">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section>
-        <div class="container">
-            <div class="banner">
-                <h1>Mi Curriculum</h1>
-                <div class="my-cv">
-                    <a href="" class="btn-banner">Sobre mí</a>
-                </div>
+    <section id="banner">
+        <div class="banner">
+            <img src="assets/img/banner-dk.jpg" alt="banner">
+            <h1>Mi Curriculum</h1>
+            <div class="my-cv">
+                <a href="#about-me" class="btn-banner">Sobre mí</a>
             </div>
         </div>
     </section>
-    <section class="about-me">
-        <div class="container">
-            <h2>Desarrollo web</h2>
-            <div class="img-me">
-                <img src="" alt="me">
-            </div>
-            <div class="text-me">
-                <p>Perfil Profesional:
-                    Desarrollador Front-End con conocimientos en creación de interfaces de usuario con experiencia en el uso de HTML, CSS y JavaScript para desarrollar aplicaciones web responsivas. Familiarizado con frameworks y herramientas modernas como Bootstrap, Webflow y Shadcn. También en metodologías de organización de código, como lo es BEM. Capacidad para trabajar en equipo, aprender rápidamente nuevas tecnologías y soy dado a ser recursivo y perseverante.</p>
-            </div>
-            <div class="skill">
+    <section id="about-me">
+        <h2>Desarrollador Front End</h2>
+            <div class="container">
+                <div class="knowledge">
+                    <div class="img-me">
+                    <img src="assets/img/profile_.png" alt="me">
+                    </div>
+                    <div class="text-me">
+                    <p>Perfil Profesional:
+                        Desarrollador Front-End con conocimientos en creación de interfaces de usuario con experiencia en el uso de HTML, CSS y JavaScript para desarrollar aplicaciones web responsivas. Familiarizado con frameworks y herramientas modernas como Bootstrap, Webflow y Shadcn, animaciones con GreenSock Animation Platform. También en metodologías de organización de código, como lo es BEM. Capacidad para trabajar en equipo, aprender rápidamente nuevas tecnologías y soy dado a ser recursivo y perseverante.</p>
+                    </div>
+                </div>
+                <div class="skill">
                 <div class="item-skills">
                     <h3>Tecnología Front End</h3>
                     <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>SASS/SCSS</li>
+                        <li>✅ HTML5</li>
+                        <li>✅ CSS3</li>
+                        <li>✅ SASS/SCSS</li>
                     </ul>
                 </div>
                 <div class="item-skills">
                     <h3>Tecnología de interactividad</h3>
                     <ul>
-                        <li>Conceptos básicos en JavaScript</li>
-                        <li>Manipulación del DOM</li>
+                        <li>✅ Conceptos básicos en JavaScript</li>
+                        <li>✅ Manipulación del DOM</li>
                     </ul>
                 </div>
                 <div class="item-skills">
                     <h3>Frameworks y Librerías</h3>
                     <ul>
-                        <li>Bootstrap</li>
-                        <li>Tailwind CSS</li>
-                        <li>Webflow</li>
-                        <li>Shadcn</li>
+                        <li>✅ Bootstrap</li>
+                        <li>✅ Tailwind CSS</li>
+                        <li>✅ Webflow</li>
+                        <li>✅ Shadcn</li>
+                        <li>✅ GSAP (GreenSock Animation Platform)</li>
                     </ul>
                 </div>
                 <div class="item-skills">
                     <h3>Metodologías</h3>
                     <ul>
-                        <li>BEM (Block Element Modifier) para estilos de CSS</li>
+                        <li>✅ BEM (Block Element Modifier) para estilos de CSS</li>
                     </ul>
                 </div>
                 <div class="item-skills">
                     <h3>Control de Versiones</h3>
                     <ul>
-                        <li>Git y GitHub</li>
+                        <li>✅ Git y GitHub</li>
                     </ul>
                 </div>
-            </div>
+                </div>
         </div>
     </section>
-    <section class="formation-me">
+    <section id="formation-me">
         <div class="container">
             <div class="formation">
-                <div class="last-formation">
+                <div class="item-formation last-formation">
                     <h3>Ultima formación: Tecnologo en Analisis y desarrollo de sistemas de informacion</h3>
                     <p>SENA | 2023</p>
                     <p>Bogotá, Colombia</p>
@@ -114,9 +118,9 @@
             </div>
         </div>
     </section>
-    <section class="experience-me">
+    <section id="experience-me">
         <div class="container">
-            <div class="last-experience">
+            <div class="item-experience last-experience">
                 <h3>Actual experiencia: HTML Developer</h3>
                 <span>FLARE</span>
                 <p><span>Area: </span>Desarrollo de software</p>
@@ -147,19 +151,20 @@
             </div>
         </div>
     </section>
-    <section class="contact-me">
+    <section id="contact-me">
         <div class="container">
             <h2>Contactame</h2>
-            <p><span>Telefono</span>317-705-8066</p>
-            <div class="social-contact">
-                <a href="#" target="_blank"><img src="" alt="Gmail"></a>
-            </div>
-            <div class="social-contact">
-                <a href="#" target="_blank"><img src="" alt="Linkedin"></a>
-
-            </div>
-            <div class="social-contact">
-                <a href="#" target="_blank"><img src="" alt="Whatsapp"></a>
+            <p><span>Telefono: </span>317-705-8066</p>
+            <div class="contact-apps">
+                <div class="social-contact">
+                    <a href="mailto:juankh993@gmail.com" target="_blank"><img src="assets/img/gmail.png" alt="Gmail"></a>
+                </div>
+                <div class="social-contact">
+                    <a href="https://www.linkedin.com/in/juan-carlos-hincapie-garz%C3%B3n-24b423220/" target="_blank"><img src="assets/img/linkedin.png" alt="Linkedin"></a>
+                </div>
+                <div class="social-contact">
+                    <a href="https://wa.me/573177058066" target="_blank"><img src="assets/img/whatsapp.png" alt="Whatsapp"></a>
+                </div>
             </div>
         </div>
     </section>
