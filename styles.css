@@ -22,8 +22,6 @@ html {
 }
 
 body {
-    max-width: 1400px;
-    margin: auto;
     font-family: Helvetica, sans-serif;
 }
 
@@ -188,6 +186,10 @@ nav ul li a:hover {
     padding: 20px 0;
 }
 
+hr {
+    display: none;
+}
+
 .last-formation {
     padding-top: 20px;
     text-align: center;
@@ -261,11 +263,20 @@ footer {
     header {
         position: fixed;
         z-index: 1;
+        left: 0;
+        right: 0;
+        padding-top: 0;
     }
     header .container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
+
+    nav {
+        padding: 20px 0;
+    }
+
     nav ul {
         flex-direction: row;
     }
@@ -298,6 +309,11 @@ footer {
         font-size: 24px;
     }
 
+    .container {
+        max-width: 1400px;
+        margin: auto;
+    }
+
     .item-skills {
         box-shadow: 0px 0px 20px 0px #9db7c1;
         padding: 18px 15px 20px;
@@ -312,9 +328,18 @@ footer {
         padding-bottom: 50px;
     }
 
+    .knowledge {
+        width: 80%;
+    }
+
+    .img-me img {
+        width: 350px;
+        height: 350px;
+    }
+
     #about-me .skill {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
     }
 
@@ -325,12 +350,89 @@ footer {
     }
 
     section {
-        scroll-margin-top: 107px;
+        scroll-margin-top: 77px;
     }
 
     #about-me .container .knowledge{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin: auto;
     }
 
+    .last-formation {
+        line-height: 35px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .formation-content {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    hr {
+        display: block;
+    }
+
+    .repository {
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .repository a {
+        font-size: 45px;
+    }
+
+    .repository a:hover {
+        color: #618ed0;
+    }
+
+    .item-experience > span:first-of-type {
+        font-size:25px;
+    }
+
+    .item-experience .last-experience {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .experience {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #experience-me .container {
+        text-align: center;
+    }
+
+    .experience .item-experience {
+        width: 50%;
+    }
+
+    #contact-me .container {
+        text-align: center;
+    }
+
+    #contact-me .container h2{
+        font-size: 60px;
+    }
+
+    .contact-apps img {
+        width: 35%;
+    }
+
+    #contact-me .contact-apps {
+        width: 50%;
+    }
+
+    footer h4 {
+        font-size: 20px;
+    }
 }
