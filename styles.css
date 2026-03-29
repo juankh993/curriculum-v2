@@ -76,7 +76,34 @@ header .logo {
 }
 
 nav {
+    position: relative;
     padding: 20px 0 40px;
+}
+
+nav .title-mobile {
+    width: 100%;
+    font-size: 20px;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+}
+
+nav .title-mobile span::after {
+    content: '';
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 15px;
+    transform: translateY(-50%) rotate(45deg);
+    transition: transform 0.3s ease;
+    margin-left: 5px;
+}
+
+nav .title-mobile span.open::after {
+    transform: translateY(-50%) rotate(225deg);
 }
 
 nav ul {
@@ -84,6 +111,11 @@ nav ul {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    display: none;
+}
+
+nav ul.open {
+    display: flex;
 }
 
 nav ul li a{
@@ -277,7 +309,12 @@ footer {
         padding: 20px 0;
     }
 
+    nav .title-mobile {
+        display: none;
+    }
+
     nav ul {
+        display: flex;
         flex-direction: row;
     }
     #banner {
