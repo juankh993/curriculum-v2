@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoja de vida</title>
+    <meta name="description" content="Juan Carlos Hincapié Garzón — Desarrollador Front-End especializado en animaciones GSAP, Tailwind CSS y Webflow. +2 años en agencias digitales.">
+    <title>Juan Carlos Hincapié — Front-End Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                CV
-            </div>
+            <div class="logo">JH</div>
             <nav>
-                <div class="title-mobile">
-                    <span>Menú</span>
-                </div>
+                <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
                 <ul>
                     <li><a href="#about-me">Sobre mí</a></li>
                     <li><a href="#formation-me">Formación</a></li>
@@ -25,154 +30,213 @@
             </nav>
         </div>
     </header>
+
     <section id="banner">
         <div class="banner">
             <img src="assets/img/banner-dk.jpg" alt="banner">
-            <h1>Mi Currículum</h1>
-            <div class="my-cv">
-                <a href="#about-me" class="btn-banner">Sobre mí</a>
+            <div class="banner-content">
+                <p class="banner-tag" data-aos="fade-down" data-aos-duration="600">Front-End Developer</p>
+                <h1 data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">Convierto diseños UX<br>en experiencias web animadas</h1>
+                <div class="banner-actions" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250">
+                    <a href="#about-me" class="btn-banner btn-primary">Ver perfil</a>
+                    <a href="#contact-me" class="btn-banner btn-secondary">Contactar</a>
+                </div>
             </div>
         </div>
     </section>
+
     <section id="about-me">
-        <h2>Desarrollador Front End</h2>
-            <div class="container">
-                <div class="knowledge">
-                    <div class="img-me">
-                    <img src="assets/img/profile_.png" alt="me">
-                    </div>
-                    <div class="text-me">
-                    <p>Perfil Profesional:
-                        Desarrollador Front-End con conocimientos en creación de interfaces de usuario con experiencia en el uso de HTML, CSS y JavaScript para desarrollar aplicaciones web responsivas. Familiarizado con frameworks y herramientas modernas como Bootstrap, Webflow y Shadcn, animaciones con GreenSock Animation Platform. También en metodologías de organización de código, como lo es BEM. Capacidad para trabajar en equipo, aprender rápidamente nuevas tecnologías y soy dado a ser recursivo y perseverante.</p>
-                    </div>
+        <div class="container">
+            <div class="about-header" data-aos="fade-up">
+                <h2>Desarrollador Front-End</h2>
+                <p class="about-subtitle">+2 años en agencias digitales · Animaciones avanzadas · Stack moderno</p>
+            </div>
+            <div class="about-body">
+                <div class="text-me" data-aos="fade-up" data-aos-delay="100">
+                    <p>Desarrollador Front-End con más de 2 años de experiencia en agencias digitales, construyendo interfaces web complejas para clientes de alto perfil. Especializado en animaciones avanzadas con GSAP, desarrollo con Tailwind CSS v4 y Vite, y en llevar diseños UX exigentes a producción con precisión. Trabajo sobre proyectos en HTML/CSS/JS puro, WordPress y Webflow, colaborando directamente con equipos de UX. Actualmente explorando React y Next.js para ampliar mi stack hacia aplicaciones más dinámicas.</p>
                 </div>
                 <div class="skill">
-                <div class="item-skills">
-                    <h3>Tecnología Front End</h3>
-                    <ul>
-                        <li>✅ HTML5</li>
-                        <li>✅ CSS3</li>
-                        <li>✅ SASS/SCSS</li>
-                    </ul>
+                    <div class="item-skills" data-aos="fade-up" data-aos-delay="0">
+                        <h3>Front-End Core</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3 / SASS</li>
+                            <li>JavaScript ES6+</li>
+                            <li>Manipulación del DOM</li>
+                        </ul>
+                    </div>
+                    <div class="item-skills" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Animación & UX</h3>
+                        <ul>
+                            <li>GSAP / ScrollTrigger</li>
+                            <li>AOS</li>
+                            <li>Choice.js</li>
+                        </ul>
+                    </div>
+                    <div class="item-skills" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Frameworks & Libs</h3>
+                        <ul>
+                            <li>Tailwind CSS v4</li>
+                            <li>Bootstrap</li>
+                            <li>React (básico)</li>
+                            <li>Next.js (básico)</li>
+                            <li>Shadcn</li>
+                        </ul>
+                    </div>
+                    <div class="item-skills" data-aos="fade-up" data-aos-delay="300">
+                        <h3>CMS & Herramientas</h3>
+                        <ul>
+                            <li>Webflow</li>
+                            <li>WordPress</li>
+                            <li>Vite / Webpack</li>
+                            <li>Git / GitHub</li>
+                            <li>BEM</li>
+                        </ul>
+                    </div>
+                    <div class="item-skills item-skills--wide" data-aos="fade-up" data-aos-delay="150">
+                        <h3>Idiomas</h3>
+                        <ul class="skills-inline">
+                            <li>Español — Nativo</li>
+                            <li>Inglés — Básico</li>
+                        </ul>
+                    </div>
+                    <div class="item-skills item-skills--wide item-skills--ai" data-aos="fade-up" data-aos-delay="200">
+                        <h3>IA como aliada de trabajo</h3>
+                        <p class="ai-desc">Integro inteligencia artificial en mi flujo de desarrollo — no como sustituto, sino como copiloto. Esto me permite entregar más rápido, con mejor calidad y mantenerme a la vanguardia de las herramientas que usan las mejores agencias.</p>
+                        <ul class="skills-ai-list">
+                            <li><span>Claude</span> — Pair programming, revisión de código y arquitectura de soluciones</li>
+                            <li><span>GitHub Copilot</span> — Autocompletado inteligente en el editor</li>
+                            <li><span>ChatGPT</span> — Generación de ideas, copywriting y debugging asistido</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="item-skills">
-                    <h3>Tecnología de interactividad</h3>
-                    <ul>
-                        <li>✅ Conceptos básicos en JavaScript</li>
-                        <li>✅ Manipulación del DOM</li>
-                    </ul>
-                </div>
-                <div class="item-skills">
-                    <h3>Frameworks y Librerías</h3>
-                    <ul>
-                        <li>✅ Bootstrap</li>
-                        <li>✅ Tailwind CSS</li>
-                        <li>✅ Webflow</li>
-                        <li>✅ Shadcn</li>
-                        <li>✅ GSAP (GreenSock Animation Platform)</li>
-                    </ul>
-                </div>
-                <div class="item-skills">
-                    <h3>Control de Versiones</h3>
-                    <ul>
-                        <li>✅ Git y GitHub</li>
-                    </ul>
-                </div>
-                </div>
+            </div>
         </div>
     </section>
+
     <section id="formation-me">
         <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Formación</h2>
             <div class="formation">
-                <div class="item-formation last-formation">
-                    <h3>Última formación: Tecnólogo en Análisis y desarrollo de sistemas de información</h3>
-                    <p>SENA | 2023</p>
-                    <p>Bogotá, Colombia</p>
+                <div class="item-formation item-formation--highlight" data-aos="fade-right">
+                    <span class="formation-year">2023</span>
+                    <h3>Tecnólogo en Análisis y Desarrollo de Sistemas de Información</h3>
+                    <p>SENA · Bogotá, Colombia</p>
                 </div>
                 <div class="formation-content">
-                    <div class="item-formation">
-                        <h4>Técnico en Mantenimiento de equipos de cómputo.</h4>
-                        <p>SENA | 2014</p>
-                        <p>Cali, Colombia</p>
+                    <div class="item-formation" data-aos="fade-left" data-aos-delay="100">
+                        <span class="formation-year">2014</span>
+                        <h4>Técnico en Mantenimiento de Equipos de Cómputo</h4>
+                        <p>SENA · Cali, Colombia</p>
                     </div>
-                    <hr>
-                    <div class="item-formation">
-                        <h4>Técnico en Mantenimiento de equipos de cómputo.</h4>
-                        <p>SENA | 2014</p>
-                        <p>Cali, Colombia</p>
-                    </div>
-                    <hr>
-                    <div class="item-formation">
-                        <h4>Bachillerato académico: Institución educativa Liceo Departamental</h4>
-                        <p>SENA | 2011</p>
-                        <p>Cali, Colombia</p>
-                    </div>
-                    <hr>
-                    <div class="item-formation">
-                        <h4>Básica primaria: La gran Colombia.</h4>
-                        <p>SENA | 2004</p>
-                        <p>Cali, Colombia</p>
+                    <div class="item-formation" data-aos="fade-left" data-aos-delay="200">
+                        <span class="formation-year">2011</span>
+                        <h4>Bachillerato Académico</h4>
+                        <p>Institución Educativa Liceo Departamental · Cali, Colombia</p>
                     </div>
                 </div>
             </div>
-            <div class="repository">
-                <a href="https://github.com/juankh993" target="_blank">Este es mi repositorio de GitHub</a>
+            <div class="repository" data-aos="fade-up">
+                <a href="https://github.com/juankh993" target="_blank">GitHub — juankh993 <span class="repo-arrow">→</span></a>
             </div>
         </div>
     </section>
+
     <section id="experience-me">
         <div class="container">
-            <div class="item-experience last-experience">
-                <h3>Experiencia actual: HTML Developer</h3>
-                <span>FLARE</span>
-                <p><span>Área: </span>Desarrollo de software</p>
-                <p><span>Líder: </span>Andrés Barreto Silva</p>
-                <p><span>Contacto: </span>(601) 6058880</p>
-                <p><span>Período: </span>Actualmente, desde el 2 de mayo de 2023</p>
-                <p>Bogotá, Colombia</p>
+            <h2 class="section-title" data-aos="fade-up">Experiencia</h2>
+            <div class="item-experience item-experience--current" data-aos="fade-up" data-aos-delay="100">
+                <div class="experience-header">
+                    <div>
+                        <h3>Desarrollador Front-End</h3>
+                        <span class="company-name">Omnicom Production</span>
+                    </div>
+                    <span class="experience-period">Mayo 2023 · Presente</span>
+                </div>
+                <p class="experience-location">Bogotá, Colombia · Desarrollo de software</p>
+                <ul class="experience-bullets">
+                    <li>Desarrollo de interfaces en proyectos de agencia: HTML/CSS/JS, WordPress y Webflow con diseños UX de alta complejidad</li>
+                    <li>Implementación de animaciones avanzadas con GSAP (ScrollTrigger, timelines) y AOS</li>
+                    <li>Adopción de Tailwind CSS v4 y Vite como build tool en proyectos actuales</li>
+                    <li>Integración de componentes Shadcn y librerías como Choice.js para campos personalizados</li>
+                </ul>
             </div>
             <div class="experience">
-                <div class="item-experience">
-                    <h3>Analista de operaciones júnior</h3>
-                    <span>AXITY</span>
-                    <p><span>Área: </span>Data center</p>
-                    <p><span>Líder: </span>Edwin José Parra</p>
-                    <p><span>Contacto: </span>(601) 6381800</p>
-                    <p><span>Período: </span>Enero 2022 | Mayo 2023</p>
-                    <p>Bogotá, Colombia</p>
+                <div class="item-experience" data-aos="fade-up" data-aos-delay="150">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Analista de Operaciones Jr.</h3>
+                            <span class="company-name">AXITY</span>
+                        </div>
+                        <span class="experience-period">Ene 2022 · May 2023</span>
+                    </div>
+                    <p class="experience-location">Bogotá, Colombia · Data Center</p>
                 </div>
-                <div class="item-experience">
-                    <h3>Técnico de soporte</h3>
-                    <span>SUMIMAS - SCALAS</span>
-                    <p><span>Área: </span>Soporte técnico en sitio: computadoras e impresoras.</p>
-                    <p><span>Líder: </span>Abelardo Baquero</p>
-                    <p><span>Contacto: </span>(601) 8773399</p>
-                    <p><span>Períodos: </span>1: Enero 2019 | Abril 2020 - 2: Agosto 2021 | Enero 2022</p>
-                    <p>Bogotá, Colombia</p>
+                <div class="item-experience" data-aos="fade-up" data-aos-delay="200">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Técnico de Soporte</h3>
+                            <span class="company-name">SUMIMAS — SCALAS</span>
+                        </div>
+                        <span class="experience-period">Ene 2019 · Ene 2022</span>
+                    </div>
+                    <p class="experience-location">Bogotá, Colombia · Soporte técnico en sitio</p>
                 </div>
             </div>
         </div>
     </section>
+
     <section id="contact-me">
+        <div class="contact-glow contact-glow--1"></div>
+        <div class="contact-glow contact-glow--2"></div>
         <div class="container">
-            <h2>Contáctame</h2>
-            <p><span>Teléfono: </span>317-705-8066</p>
-            <div class="contact-apps">
-                <div class="social-contact">
-                    <a href="mailto:juankh993@gmail.com" target="_blank"><img src="assets/img/gmail.png" alt="Gmail"></a>
+            <div class="contact-inner">
+                <div class="contact-heading" data-aos="fade-up">
+                    <p class="contact-tag">¿Tienes un proyecto?</p>
+                    <h2>Hablemos</h2>
+                    <p class="contact-desc">Estoy disponible para proyectos freelance, colaboraciones y nuevas oportunidades.</p>
                 </div>
-                <div class="social-contact">
-                    <a href="https://www.linkedin.com/in/juan-carlos-hincapie-garz%C3%B3n-24b423220/" target="_blank"><img src="assets/img/linkedin.png" alt="Linkedin"></a>
-                </div>
-                <div class="social-contact">
-                    <a href="https://wa.me/573177058066" target="_blank"><img src="assets/img/whatsapp.png" alt="Whatsapp"></a>
+                <div class="contact-links" data-aos="fade-up" data-aos-delay="150">
+                    <a href="mailto:juankh993@gmail.com" target="_blank" class="contact-card contact-card--gmail">
+                        <div class="contact-card-icon">
+                            <img src="assets/img/gmail.png" alt="Gmail">
+                        </div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-label">Email</span>
+                            <span class="contact-card-value">juankh993@gmail.com</span>
+                        </div>
+                        <span class="contact-card-arrow">→</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/juan-carlos-hincapie-garz%C3%B3n-24b423220/" target="_blank" class="contact-card contact-card--linkedin">
+                        <div class="contact-card-icon">
+                            <img src="assets/img/linkedin.png" alt="Linkedin">
+                        </div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-label">LinkedIn</span>
+                            <span class="contact-card-value">Juan Carlos Hincapié</span>
+                        </div>
+                        <span class="contact-card-arrow">→</span>
+                    </a>
+                    <a href="https://wa.me/573177058066" target="_blank" class="contact-card contact-card--whatsapp">
+                        <div class="contact-card-icon">
+                            <img src="assets/img/whatsapp.png" alt="Whatsapp">
+                        </div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-label">WhatsApp</span>
+                            <span class="contact-card-value">317-705-8066</span>
+                        </div>
+                        <span class="contact-card-arrow">→</span>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+
     <footer>
-        <h4>&copy; 2025 Juan Carlos Hincapié Garzón</h4>
+        <p>&copy; 2026 Juan Carlos Hincapié Garzón</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
